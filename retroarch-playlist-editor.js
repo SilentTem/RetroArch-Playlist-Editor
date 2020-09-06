@@ -650,6 +650,8 @@ function setCorePath(corePath){
 			el('core-path-message').innerHTML='Vita';
 		}else if(/\.rpx$/.test(corePath)){
 			el('core-path-message').innerHTML='Wii U';
+		}else if(/^:\\/i.test(corePath)){
+			el('core-path-message').innerHTML='UWP (Xbox One/Windows 10)';
 		}else{
 			el('core-path-message').innerHTML='';
 		}
